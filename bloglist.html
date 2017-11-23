@@ -59,6 +59,9 @@ document.getElementById("ifm").height = h + "px";
 document.getElementById("ifm").width = w + "px";
 });
 })
+function a(url){
+    document.getElementById("ifm").src =url;
+}
 </script>
 
 <div id="pageone" style="">
@@ -70,8 +73,8 @@ document.getElementById("ifm").width = w + "px";
     <div data-role="navbar" >
       <ul>
         <li><a href="https://lichengdu.github.io/htm/index.html"  data-direction="reverse" data-icon="home">主页</a></li>
-        <li><a href="https://lichengdu.github.io/htm/bloglist.html"  data-direction="reverse" data-icon="comment">我的博客</a></li>
-        <li><a href="https://lichengdu.github.io/htm/bloglist_guolin.html"  data-direction="reverse" data-icon="calendar">郭霖博客</a></li>
+        <li><a href="javascript:a('http://blog.csdn.net/blog/index?username=qq_29582193&cat=1"  data-direction="reverse" data-icon="comment">我的博客</a></li>
+        <li><a href="javascript:a('http://blog.csdn.net/blog/index?username=sinyu890807&cat=1');"  data-direction="reverse" data-icon="calendar">郭霖博客</a></li>
         <li><a href="https://lichengdu.github.io/htm/about.html"  data-direction="reverse" data-icon="user">关于我们</a></li>
        
       </ul>
