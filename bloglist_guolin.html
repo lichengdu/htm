@@ -50,16 +50,6 @@ span{color:#ffffff;}
 
 <div data-role="page" id="pageone">
 <script type="text/javascript">
-$(function () {
-document.getElementById("ifm").src ="http://blog.csdn.net/guolin_blog";//Url地址
-$("#ifm").load(function () {
-var h = document.body.clientHeight;
-var w = document.body.clientWidth;
-document.getElementById("ifm").height = h + "px";
-document.getElementById("ifm").width = w + "px";
-});
-})
-
 function a(url){
     document.getElementById("ifm").src =url;
 }
@@ -83,7 +73,17 @@ function a(url){
   </div>
 </div>
 </div>
-
+<script type="text/javascript">
+$(function () {
+$("#ifm").load(function () {
+var h = document.body.clientHeight;
+var w = document.body.clientWidth;
+document.getElementById("ifm").height = h + "px";
+document.getElementById("ifm").width = w + "px";
+});
+a('http://m.blog.csdn.net/blog/index?username=qq_29582193&cat=1');
+})
+</script>
 </body>
 </html>
 
